@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".view.SettingsFragment">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="Text size (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/text_size_tv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" android:id="@+id/text_size_sb"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="2dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="4dp"/>
+            <TextView
+                    android:text="Circle Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/circle_width_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/text_size_tv"
+                    android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" android:id="@+id/circle_width_sb"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="2dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/text_size_sb"/>
+            <TextView
+                    android:text="Hand Hour Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/hand_hour_width_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/circle_width_tv"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="120"
+                    android:layout_height="20dp" android:id="@+id/hand_hour_width_sb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/circle_width_sb" android:layout_marginTop="8dp"
+                    android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="Hand Minute Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/hand_minute_width_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/hand_hour_width_tv"
+                    android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="100"
+                    android:layout_height="20dp" android:id="@+id/hand_minute_width_sb"
+                    app:layout_constraintTop_toBottomOf="@+id/hand_hour_width_sb" android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="Hand Second Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/hand_second_width_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp" app:layout_constraintTop_toBottomOf="@+id/hand_minute_width_tv"
+                    android:layout_marginTop="8dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="70"
+                    android:layout_height="20dp" android:id="@+id/hand_second_width_sb"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/hand_minute_width_sb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="Marker Length (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/marker_length_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp" app:layout_constraintTop_toBottomOf="@+id/hand_second_width_tv"
+                    android:layout_marginTop="8dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="100"
+                    android:layout_height="20dp" android:id="@+id/marker_length_sb"
+                    android:layout_marginEnd="2dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/hand_second_width_sb"/>
+            <TextView
+                    android:text="Marker Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/marker_width_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp" app:layout_constraintTop_toBottomOf="@+id/marker_length_tv"
+                    android:layout_marginTop="8dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" android:id="@+id/marker_width_sb"
+                    android:max="70"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_length_sb" android:layout_marginTop="8dp"
+                    android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="Marker Special Length (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/marker_special_length_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_width_tv"
+                    android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="300"
+                    android:layout_height="20dp" android:id="@+id/marker_special_length_sb"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_width_sb"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="Marker Special Width (dp)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/marker_special_width_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_special_length_tv" android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:layout_width="150dp"
+                    android:max="200"
+                    android:layout_height="20dp" android:id="@+id/marker_special_width_sb"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_special_length_sb" android:layout_marginEnd="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                    android:text="Inner Circle Color (RGBA)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintTop_toBottomOf="@+id/marker_special_width_tv" android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_red_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_tv" android:layout_marginTop="8dp"
+                    android:layout_marginStart="2dp"/>
+            <SeekBar
+                    android:min="0"
+                    android:max="255"
+                    android:layout_width="256dp"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_red_sb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_tv" android:layout_marginTop="8dp"
+                    android:layout_marginEnd="2dp"/>
+            <SeekBar
+                    android:min="0"
+                    android:max="255"
+                    android:layout_width="256dp"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_green_sb"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_red_sb"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="2dp"
+                    android:layout_marginTop="8dp"/>
+            <SeekBar
+                    android:min="0"
+                    android:max="255"
+                    android:layout_width="256dp"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_blue_sb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_green_sb"
+                    android:layout_marginTop="8dp" android:layout_marginEnd="2dp"/>
+            <TextView
+                    android:text="G"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_green_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_red_tv" android:layout_marginTop="8dp"
+                    android:layout_marginStart="2dp"/>
+            <TextView
+                    android:text="B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_blue_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_green_tv"
+                    android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="2dp"/>
+            <TextView
+                    android:text="A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_alpha_tv"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_blue_tv"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="2dp"
+                    android:layout_marginTop="8dp"/>
+            <SeekBar
+                    android:min="0"
+                    android:max="255"
+                    android:layout_width="256dp"
+                    android:layout_height="20dp" android:id="@+id/inner_circle_color_alpha_sb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inner_circle_color_blue_sb"
+                    android:layout_marginTop="8dp" android:layout_marginEnd="2dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

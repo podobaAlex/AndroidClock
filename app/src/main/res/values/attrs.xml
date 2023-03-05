@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+
+        <attr name="clock_number_text_size" format="dimension"/>
+
+        <attr name="clock_hand_hour_width" format="dimension"/>
+        <attr name="clock_hand_minute_width" format="dimension"/>
+        <attr name="clock_hand_second_width" format="dimension"/>
+
+        <attr name="clock_marker_length" format="dimension"/>
+        <attr name="clock_marker_width" format="dimension"/>
+
+        <attr name="clock_marker_special_length" format="dimension"/>
+        <attr name="clock_marker_special_width" format="dimension"/>
+
+        <attr name="clock_circle_width" format="dimension"/>
+
+        <attr name="clock_hand_hour_color" format="color"/>
+        <attr name="clock_hand_minute_color" format="color"/>
+        <attr name="clock_hand_second_color" format="color"/>
+
+        <attr name="clock_circle_color" format="color"/>
+        <attr name="clock_circle_inner_color" format="color"/>
+
+    </declare-styleable>
+</resources>
