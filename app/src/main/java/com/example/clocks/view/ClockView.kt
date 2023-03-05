@@ -217,7 +217,7 @@ class ClockView(context: Context, private val attributeSet: AttributeSet) : View
         canvas.drawCircle(clockCenterX, clockCenterY, clockRadius, clockPaint)
 
         setPaintAttributes(clockCircleInnerColor, Paint.Style.FILL, clockCircleWidth)
-        canvas.drawCircle(clockCenterX, clockCenterY, clockRadius, clockPaint)
+        canvas.drawCircle(clockCenterX, clockCenterY, clockRadius - (clockCircleWidth / 2), clockPaint)
 
         drawMarkers(canvas)
     }
